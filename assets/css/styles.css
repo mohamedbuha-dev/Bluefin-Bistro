@@ -1,0 +1,46 @@
+
+/* Custom styles (kept small for clarity) */
+:root { --brand:#0ea5e9; }
+html { scroll-behavior: smooth; }
+a:focus, button:focus, input:focus, select:focus, textarea:focus { outline: 3px solid var(--brand); outline-offset: 2px; }
+.navbar-brand span{ color: var(--brand); }
+.hero { background: #0b1220; color: #fff; }
+.hero .slick-dots li button:before { font-size: 10px; }
+.card-img-top { object-fit: cover; height: 200px; }
+.filter-controls .btn.active { background: var(--brand); border-color: var(--brand); }
+footer { background:#0f172a; color:#cbd5e1; }
+.gallery img{ height: 180px; object-fit: cover; }
+.leaflet-container { min-height: 380px; border-radius: .5rem; }
+
+/* Hero slider dots - brand styling */
+.hero .slick-dots {
+  position: absolute;
+  bottom: -40px;
+  display: flex !important;       
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero .slick-dots li {
+  margin: 0 6px;
+}
+
+.hero .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0ea5e9;     
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-indent: -9999px;            /* this hides the txt */
+}
+
+.hero .slick-dots li.slick-active button {
+  background-color: #fff;         
+  border: 2px solid #0ea5e9;      
+}
+
