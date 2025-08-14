@@ -1,0 +1,145 @@
+
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bluefin Bistro</title>
+<meta name="description" content="Bluefin Bistro — a modern seafood restaurant. Reserve a table, browse our menu, and explore our gallery." />
+<!--bootstrap and Js plugins links-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
+<link href="assets/css/styles.css" rel="stylesheet" />
+
+  </head>
+  <body>
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" aria-label="Primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html" aria-label="Bluefin Bistro Home">
+      Bluefin <span>Bistro</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Hero Slider (Slick) -->
+    <section class="hero py-5">
+      <div class="container">
+        <div class="hero-slider" aria-label="Featured dishes slider">
+          <div><img class="w-100 rounded-3" src="assets/img/Seared-salmon-with-herbs.jpg" alt="Seared salmon with herbs" /></div>
+          <div><img class="w-100 rounded-3" src="assets/img/Oysters-on-ice-platter.jpg" alt="Oysters on ice platter" /></div>
+          <div><img class="w-100 rounded-3" src="assets/img/Shrimp-pasta-with-tomato-sauce.jpg" alt="Shrimp pasta with tomato sauce" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Featured Grid (MixItUp) -->
+    <section class="container my-5">
+      <header class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h3 m-0">Featured Plates</h2>
+        <div class="filter-controls btn-group" role="group" aria-label="Filter dishes">
+          <button class="btn btn-outline-primary active" data-filter="all">All</button>
+          <button class="btn btn-outline-primary" data-filter=".grill">Grill</button>
+          <button class="btn btn-outline-primary" data-filter=".raw">Raw</button>
+          <button class="btn btn-outline-primary" data-filter=".pasta">Pasta</button>
+        </div>
+      </header>
+
+      <div class="row g-4" id="mix-grid">
+        <article class="col-sm-6 col-lg-4 mix grill" data-aos="fade-up">
+          <div class="card h-100">
+            <img class="card-img-top" src="assets/img/Grilled-tuna-steak.jpg" alt="Grilled tuna steak" />
+            <div class="card-body">
+              <h3 class="h5">Grilled Tuna</h3>
+              <p class="mb-0">Charred to perfection with lemon butter.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 mix raw" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100">
+            <img class="card-img-top" src="assets/img/Sushi-assortment.webp" alt="Sushi assortment" />
+            <div class="card-body">
+              <h3 class="h5">Sushi Assortment</h3>
+              <p class="mb-0">Chef's selection of fresh nigiri and maki.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 mix pasta" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100">
+            <img class="card-img-top" src="assets/img/Seafood-linguine.jpg" alt="Seafood linguine" />
+            <div class="card-body">
+              <h3 class="h5">Seafood Linguine</h3>
+              <p class="mb-0">Shrimp, mussels, and clams in a light sauce.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lightbox Gallery (GLightbox) -->
+    <section class="container my-5">
+      <h2 class="h3 mb-3">Gallery</h2>
+      <div class="row g-3 gallery" aria-label="Food photography gallery">
+        <div class="col-6 col-md-3" data-aos="zoom-in">
+          <a href="assets/img/Seared-salmon-with-herbs.jpg" class="glightbox" data-gallery="food" aria-label="Open full photo 1">
+            <img class="w-100 rounded" src="assets/img/Seared-salmon-with-herbs.jpg" alt="Seared salmon close-up" />
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <a href="assets/img/Oysters-on-ice-platter.jpg" class="glightbox" data-gallery="food" aria-label="Open full photo 2">
+            <img class="w-100 rounded" src="assets/img/Oysters-on-ice-platter.jpg" alt="Fresh oysters" />
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <a href="assets/img/Shrimp-pasta-with-tomato-sauce.jpg" class="glightbox" data-gallery="food" aria-label="Open full photo 3">
+            <img class="w-100 rounded" src="assets/img/Shrimp-pasta-with-tomato-sauce.jpg" alt="Shrimp pasta bowl" />
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <a href="assets/img/Grilled-tuna-steak.jpg" class="glightbox" data-gallery="food" aria-label="Open full photo 4">
+            <img class="w-100 rounded" src="assets/img/Grilled-tuna-steak.jpg" alt="Tuna steak plating" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+<footer class="mt-5 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <p class="m-0">© <span id="year"></span> Bluefin Bistro</p>
+    <nav aria-label="Footer">
+      <a class="me-3 link-light" href="#top">Back to top</a>
+      <a class="link-light" href="contact.html#accessibility">Accessibility</a>
+    </nav>
+  </div>
+</footer>
+
+<!--Js Plugins used:-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+  </body>
+</html>
